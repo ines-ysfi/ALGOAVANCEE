@@ -1,1 +1,203 @@
-# ALGOAVANCEE
+# ALGOAVANCEE - Programmes en C
+
+Ce dépôt regroupe plusieurs travaux pratiques (TP) en langage C organisés par dossiers (Tp01, Tp02, ...). Chaque dossier contient des fichiers sources, parfois des exécutables ou des fichiers de données.
+
+## Table des matières
+- [Vue d'ensemble](#vue-densemble)
+- [Prérequis](#prérequis)
+- [Compiler & Exécuter](#compiler--exécuter)
+- [Description détaillée des TPs](#description-détaillée-des-tps)
+- [Arborescence](#arborescence)
+- [Contribution](#contribution)
+- [Licence](#licence)
+
+## Vue d'ensemble
+
+Ce projet contient des implémentations d'algorithmes de graphes, d'arbres et de structures de données :
+
+### Dossiers principaux
+
+- **`Tp01/`** — Premier TP : Implémentation de l'algorithme de coloration de graphe Welsh et Powell
+- **`Tp02/`** — Deuxième TP : Extension du TP1 avec chargement de graphes depuis l'entrée standard ou fichier
+- **`Tp03/`** — Troisième TP : Arbres généraux et correction de l'algorithme Welsh-Powell
+- **`Tp11/`** — Listes chaînées et utilitaires
+- **`Tp12/`** — Arbres binaires
+
+## Prérequis
+
+- **Système d'exploitation** : Linux (ou compatible Unix/macOS)
+- **Compilateur** : `gcc` (GNU Compiler Collection)
+- **Éditeur** (optionnel) : Visual Studio Code, Vim, Emacs, ou autre
+
+### Installation de gcc (si nécessaire)
+```bash
+# Sur Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install gcc
+
+# Sur Fedora/RHEL
+sudo dnf install gcc
+
+# Sur macOS (avec Homebrew)
+brew install gcc
+```
+
+## Compiler & Exécuter
+
+### Instructions générales
+
+1. **Naviguer vers le dossier du TP** :
+```bash
+   cd Tp01
+```
+
+2. **Compiler les fichiers sources** :
+```bash
+   gcc -Wall -Wextra -g *.c -o programme
+```
+   
+   Options de compilation :
+   - `-Wall` : Active tous les avertissements standards
+   - `-Wextra` : Active des avertissements supplémentaires
+   - `-g` : Inclut les informations de débogage
+
+3. **Exécuter le programme** :
+```bash
+   ./programme
+```
+
+### Exemples spécifiques par TP
+
+#### TP01 - Welsh et Powell
+```bash
+cd Tp01
+gcc -Wall -Wextra -g graph.c mainTest.c -o mainTest
+./mainTest
+```
+
+#### TP02 - Chargement de graphes
+```bash
+cd Tp02
+gcc -Wall -Wextra -g graph.c main.c -o main
+
+# Exécution avec entrée standard
+./main
+
+# Exécution avec fichier
+./main < pays.txt
+```
+
+#### TP03 - Arbres et Welsh-Powell corrigé
+```bash
+cd Tp03
+
+# Pour tester les arbres généraux
+gcc -Wall -Wextra -g arbreGen.c testArbre.c -o testArbre
+./testArbre
+
+# Pour l'algorithme Welsh-Powell corrigé
+gcc -Wall -Wextra -g CorrectWelshPowell.c -o welsh
+./welsh
+```
+
+#### TP11 - Listes chaînées
+```bash
+cd Tp11
+gcc -Wall -Wextra -g liste.c maListe.c -o liste
+./liste
+```
+
+#### TP12 - Arbres binaires
+```bash
+cd Tp12
+gcc -Wall -Wextra -g arbre.c monArbre.c -o arbre
+./arbre
+```
+
+## Description détaillée des TPs
+
+### TP01 - Algorithme de Welsh et Powell
+Implémentation de l'algorithme de coloration de graphes Welsh-Powell.
+
+**Fichiers** :
+- `graph.c` / `graph.h` : Structure de données et fonctions pour les graphes
+- `mainTest.c` : Programme de test
+- `mainTest` : Exécutable précompilé
+
+### TP02 - Chargement de graphes
+Extension du TP01 avec la capacité de charger des graphes depuis l'entrée standard ou un fichier.
+
+**Fichiers** :
+- `graph.c` / `graph.h` : Gestion des graphes (version améliorée)
+- `main.c` : Programme principal avec lecture de fichier
+- `pays.txt` : Exemple de graphe représentant les pays européens
+- `main` : Exécutable précompilé
+
+### TP03 - Arbres généraux et correction Welsh-Powell
+Travaux sur les arbres généraux et version corrigée de l'algorithme Welsh-Powell.
+
+**Fichiers** :
+- `arbreGen.c` / `arbreGen.h` : Implémentation des arbres généraux
+- `testArbre.c` : Tests pour les arbres
+- `CorrectWelshPowell.c` : Version corrigée de l'algorithme
+- `testArbre`, `welsh` : Exécutables précompilés
+
+### TP11 - Listes chaînées
+Implémentation et manipulation de listes chaînées.
+
+**Fichiers** :
+- `liste.c` / `liste.h` : Structure et opérations sur les listes
+- `maListe.c` : Programme de test
+- `a.out` : Exécutable précompilé
+
+### TP12 - Arbres binaires
+Implémentation d'arbres binaires et opérations associées.
+
+**Fichiers** :
+- `arbre.c` / `arbre.h` : Structure et fonctions pour arbres binaires
+- `monArbre.c` : Programme de test
+- `arbre` : Exécutable précompilé
+
+## Arborescence
+```
+ALGOAVANCEE/
+├── README.md
+├── Tp01/
+│   ├── graph.c
+│   ├── graph.h
+│   ├── mainTest.c
+│   └── mainTest
+├── Tp02/
+│   ├── graph.c
+│   ├── graph.h
+│   ├── main.c
+│   ├── main
+│   └── pays.txt
+├── Tp03/
+│   ├── CorrectWelshPowell.c
+│   ├── arbreGen.c
+│   ├── arbreGen.h
+│   ├── testArbre.c
+│   ├── testArbre
+│   └── welsh
+├── Tp11/
+│   ├── liste.c
+│   ├── liste.h
+│   ├── maListe.c
+│   └── a.out
+└── Tp12/
+    ├── arbre.c
+    ├── arbre.h
+    ├── monArbre.c
+    └── arbre
+
+
+## Licence
+
+Ce projet est destiné à un usage éducatif dans le cadre du cours d'algorithmique avancée.
+
+---
+
+**Auteur** : [Ines YOusfi]  
+**Cours** : Algorithmique Avancée  
+**Année** : [2025/2026]
