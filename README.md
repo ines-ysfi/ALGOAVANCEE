@@ -27,19 +27,6 @@ Ce projet contient des implémentations d'algorithmes de graphes, d'arbres et de
 - **Compilateur** : `gcc` (GNU Compiler Collection)
 - **Éditeur** (optionnel) : Visual Studio Code, Vim, Emacs, ou autre
 
-### Installation de gcc (si nécessaire)
-```bash
-# Sur Ubuntu/Debian
-sudo apt-get update
-sudo apt-get install gcc
-
-# Sur Fedora/RHEL
-sudo dnf install gcc
-
-# Sur macOS (avec Homebrew)
-brew install gcc
-```
-
 ## Compiler & Exécuter
 
 ### Instructions générales
@@ -112,37 +99,38 @@ Implémentation d'arbres binaires et opérations associées.
 
 ## Arborescence
 ```
-ALGOAVANCEE/
-├── README.md
-├── Tp01/
-│   ├── graph.c
-│   ├── graph.h
-│   ├── mainTest.c
-│   └── mainTest
-├── Tp02/
-│   ├── graph.c
-│   ├── graph.h
-│   ├── main.c
-│   ├── main
-│   └── pays.txt
-├── Tp03/
-│   ├── CorrectWelshPowell.c
-│   ├── arbreGen.c
-│   ├── arbreGen.h
-│   ├── testArbre.c
-│   ├── testArbre
-│   └── welsh
-├── Tp11/
-│   ├── liste.c
-│   ├── liste.h
-│   ├── maListe.c
-│   └── a.out
-└── Tp12/
-    ├── arbre.c
-    ├── arbre.h
-    ├── monArbre.c
-    └── arbre
+README.md
+.vscode/
+Tp01/
+├── graph.c
+├── graph.h
+├── mainTest.c
+└── mainTest
+Tp02/
+├── graph.c
+├── graph.h
+├── main.c
+├── main
+└── pays.txt
+Tp03/
+├── CorrectWelshPowell.c
+├── arbreGen.c
+├── arbreGen.h
+├── testArbre.c
+├── testArbre
+└── welsh
+Tp11/
+├── liste.c
+├── liste.h
+├── maListe.c
+└── a.out
+Tp12/
+├── arbre.c
+├── arbre.h
+├── monArbre.c
+└── arbre
 ```
+
 
 ## Licence
 
