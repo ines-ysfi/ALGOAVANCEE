@@ -98,7 +98,6 @@ Implémentation d'arbres binaires et opérations associées.
 - `arbre` : Exécutable précompilé
 
 ## Arborescence
-## 🌳 Arborescence
 
 ```bash
 ALGOAVANCEE/
