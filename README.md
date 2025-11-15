@@ -98,39 +98,39 @@ Implémentation d'arbres binaires et opérations associées.
 - `arbre` : Exécutable précompilé
 
 ## Arborescence
-```
-README.md
-.vscode/
-Tp01/
-├── graph.c
-├── graph.h
-├── mainTest.c
-└── mainTest
-Tp02/
-├── graph.c
-├── graph.h
-├── main.c
-├── main
-└── pays.txt
-Tp03/
-├── CorrectWelshPowell.c
-├── arbreGen.c
-├── arbreGen.h
-├── testArbre.c
-├── testArbre
-└── welsh
-Tp11/
-├── liste.c
-├── liste.h
-├── maListe.c
-└── a.out
-Tp12/
-├── arbre.c
-├── arbre.h
-├── monArbre.c
-└── arbre
-```
+## 🌳 Arborescence
 
+```bash
+ALGOAVANCEE/
+├── README.md
+├── Tp01/
+│   ├── graph.c
+│   ├── graph.h
+│   ├── mainTest.c
+│   └── mainTest (Exécutable)
+├── Tp02/
+│   ├── graph.c
+│   ├── graph.h
+│   ├── main.c
+│   ├── main (Exécutable)
+│   └── pays.txt
+├── Tp03/
+│   ├── CorrectWelshPowell.c
+│   ├── arbreGen.c
+│   ├── arbreGen.h
+│   ├── testArbre.c
+│   ├── testArbre (Exécutable)
+│   └── welsh (Exécutable)
+├── Tp11/
+│   ├── liste.c
+│   ├── liste.h
+│   ├── maListe.c
+│   └── a.out (Exécutable)
+└── Tp12/
+    ├── arbre.c
+    ├── arbre.h
+    ├── monArbre.c
+    └── arbre (Exécutable)
 
 ## Licence
 
