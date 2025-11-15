@@ -1,6 +1,4 @@
-# ALGOAVANCEE - Programmes en C
-
-Ce dépôt regroupe plusieurs travaux pratiques (TP) en langage C organisés par dossiers (Tp01, Tp02, ...). Chaque dossier contient des fichiers sources, parfois des exécutables ou des fichiers de données.
+# ALGO AVANCEE - Programmes en C
 
 ## Table des matières
 - [Vue d'ensemble](#vue-densemble)
@@ -46,73 +44,27 @@ brew install gcc
 
 ### Instructions générales
 
-1. **Naviguer vers le dossier du TP** :
-```bash
-   cd Tp01
-```
-
-2. **Compiler les fichiers sources** :
-```bash
-   gcc -Wall -Wextra -g *.c -o programme
-```
-   
-   Options de compilation :
-   - `-Wall` : Active tous les avertissements standards
-   - `-Wextra` : Active des avertissements supplémentaires
-   - `-g` : Inclut les informations de débogage
-
-3. **Exécuter le programme** :
-```bash
-   ./programme
-```
 
 ### Exemples spécifiques par TP
 
 #### TP01 - Welsh et Powell
 ```bash
 cd Tp01
-gcc -Wall -Wextra -g graph.c mainTest.c -o mainTest
+gcc graph.c mainTest.c -o mainTest
 ./mainTest
 ```
 
 #### TP02 - Chargement de graphes
 ```bash
 cd Tp02
-gcc -Wall -Wextra -g graph.c main.c -o main
+gcc graph.c main.c -o main
 
 # Exécution avec entrée standard
 ./main
 
 # Exécution avec fichier
 ./main < pays.txt
-```
 
-#### TP03 - Arbres et Welsh-Powell corrigé
-```bash
-cd Tp03
-
-# Pour tester les arbres généraux
-gcc -Wall -Wextra -g arbreGen.c testArbre.c -o testArbre
-./testArbre
-
-# Pour l'algorithme Welsh-Powell corrigé
-gcc -Wall -Wextra -g CorrectWelshPowell.c -o welsh
-./welsh
-```
-
-#### TP11 - Listes chaînées
-```bash
-cd Tp11
-gcc -Wall -Wextra -g liste.c maListe.c -o liste
-./liste
-```
-
-#### TP12 - Arbres binaires
-```bash
-cd Tp12
-gcc -Wall -Wextra -g arbre.c monArbre.c -o arbre
-./arbre
-```
 
 ## Description détaillée des TPs
 
