@@ -196,17 +196,3 @@ java MainApp.App
 
 ---
 
-
-## Checklist d'exécution
-
-### Pour le Projet Python :
-- [ ] Accédez à `CodeMiniProjet`
-- [ ] Installez les dépendances : `pip install matplotlib numpy pillow`
-- [ ] Lancez : `python main.py`
-- [ ] Cliquez sur deux points sur l'image
-
-### Pour le Projet Java :
-- [ ] Accédez à `CodePartB`
-- [ ] Compilez : `javac -d bin src/MainApp/*.java` (ou utilisez les fichiers .class existants)
-- [ ] Lancez : `java -cp bin MainApp.App`
-- [ ] Explorez le graphe dans l'interface
